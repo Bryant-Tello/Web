@@ -16,6 +16,8 @@ import {MatTableModule} from '@angular/material/table';
 import {MatIconModule} from '@angular/material/icon';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatButtonModule} from '@angular/material/button';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import {MatButtonModule} from '@angular/material/button';
     MatTableModule,
     MatIconModule,
     MatProgressBarModule,
-    MatButtonModule
+    MatButtonModule,
+    MatFormFieldModule,
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
