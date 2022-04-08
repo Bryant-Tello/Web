@@ -1,1 +1,50 @@
-<p>medicos works!</p>
+
+ <mat-toolbar>
+    <span>Lista de Médicos</span>
+    <p></p>
+  </mat-toolbar>
+  <div class="float-right"></div><br>
+<div class="input-group rounded col-4 float-right" >
+    <input type="search" class="form-control rounded" placeholder="Buscar...." aria-label="Search" aria-describedby="search-addon" />
+    <span class="input-group-text border-0" id="search-addon">
+      <i class="fas fa-search"></i>
+    </span>
+    <br>
+  </div>
+
+<div class="table-responsive table-striped mr-3" style="border-radius: 10px;">
+    <br>
+    <table class="table" style="margin:0px;">
+        <thead style="background-color: rgba(52,58,64,0.75);color: rgb(255,255,255);">
+            <tr>
+                <th class="align-middle">Nº</th>
+                <th class="align-middle"><strong>Nombres y Apellidos</strong><br></th>
+                <th class="align-middle"><strong>Fecha de Registro</strong><br></th>
+                <th class="align-middle"><strong>Sede</strong><br></th>
+                <th class="align-middle"><strong>Especialidad</strong><br></th>
+                <th class="align-middle" style="text-align: center;"></th>
+                <th class="align-middle" style="text-align: center;"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="align-middle">1</td>
+                <td class="align-middle">Miguek Araujo Carrasco</td>
+                <td class="align-middle">13/11/2020</td>
+                <td class="align-middle">San borja</td>
+                <td class="align-middle">Pediatría</td>
+                <td class="text-center"><a href="#" class="btn btn-outline-dark"><i class="fa fa-pencil"></i></a></td>
+                <td class="text-center"><a href="#" class="btn btn-outline-danger"><i class="fa fa-remove"></i></a></td>
+            </tr>
+            <tr>
+                <td class="align-middle">2</td>
+                <td class="align-middle">Esteban Palomino</td>
+                <td class="align-middle">03/01/2021</td>
+                <td class="align-middle">Surco</td>
+                <td class="align-middle">Ginecología</td>
+                <td class="text-center"><a href="#" class="btn btn-outline-dark"><i class="fa fa-pencil"></i></a></td>
+                <td class="text-center"><a href="#" class="btn btn-outline-danger"><i class="fa fa-remove"></i></a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
