@@ -18,6 +18,7 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatButtonModule} from '@angular/material/button';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import { HistorialComponent } from './pages/historial/historial.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     SeguimientoPacienteComponent,
     DirectorioComponent,
     PerfilComponent,
-    HomeComponent
+    HomeComponent,
+    HistorialComponent
   ],
   imports: [
     BrowserModule,

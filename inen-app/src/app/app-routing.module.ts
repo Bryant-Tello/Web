@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DirectorioComponent } from './pages/directorio/directorio.component';
+import { HistorialComponent } from './pages/historial/historial.component';
 import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { MedicosComponent } from './pages/medicos/medicos.component';
@@ -15,7 +16,8 @@ const routes: Routes = [
   {path : 'home', component: HomeComponent},
   {path: 'pacientes', component: PacientesComponent},
   {path: 'perfil', component: PerfilComponent},
-  {path: 'seguimiento-paciente', component: SeguimientoPacienteComponent}
+  {path: 'seguimiento-paciente', component: SeguimientoPacienteComponent},
+  {path: 'historialmedico', component: HistorialComponent}
 ];
 
 @NgModule({
