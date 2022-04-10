@@ -22,6 +22,7 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 import { HistorialComponent } from './pages/historial/historial.component';
 import { ListaPacientesComponent } from './pages/pacientes/lista-pacientes/lista-pacientes.component';
 import { NuevoPacienteComponent } from './pages/pacientes/nuevo-paciente/nuevo-paciente.component';
+import { EditarHistorialComponent } from './pages/historial/editar-historial/editar-historial.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { NuevoPacienteComponent } from './pages/pacientes/nuevo-paciente/nuevo-p
     HomeComponent,
     HistorialComponent,
     ListaPacientesComponent,
-    NuevoPacienteComponent
+    NuevoPacienteComponent,
+    EditarHistorialComponent
   ],
   imports: [
     BrowserModule,
