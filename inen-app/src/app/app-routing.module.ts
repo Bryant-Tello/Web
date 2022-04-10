@@ -5,6 +5,7 @@ import { HistorialComponent } from './pages/historial/historial.component';
 import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { MedicosComponent } from './pages/medicos/medicos.component';
+import { DetallePacienteComponent } from './pages/detallePaciente/detallePaciente.component';
 import { PacientesComponent } from './pages/pacientes/pacientes.component';
 import { PerfilComponent } from './pages/perfil/perfil.component';
 import { SeguimientoPacienteComponent } from './pages/seguimiento-paciente/seguimiento-paciente.component';
@@ -15,6 +16,7 @@ const routes: Routes = [
   {path: 'directorio', component: DirectorioComponent},
   {path: 'login', component: LoginComponent },
   {path: 'medicos', component: MedicosComponent},
+  {path: 'detallePaciente', component: DetallePacienteComponent},
   {path : 'home', component: HomeComponent},
   {path: 'pacientes', component: PacientesComponent},
   {path: 'perfil', component: PerfilComponent},

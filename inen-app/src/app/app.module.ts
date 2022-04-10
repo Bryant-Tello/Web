@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './pages/login/login.component';
 import { MedicosComponent } from './pages/medicos/medicos.component';
+import { DetallePacienteComponent } from './pages/detallePaciente/detallePaciente.component';
 import { PacientesComponent } from './pages/pacientes/pacientes.component';
 import { SeguimientoPacienteComponent } from './pages/seguimiento-paciente/seguimiento-paciente.component';
 import { DirectorioComponent } from './pages/directorio/directorio.component';
@@ -27,6 +28,7 @@ import { NuevoPacienteComponent } from './pages/pacientes/nuevo-paciente/nuevo-p
     AppComponent,
     LoginComponent,
     MedicosComponent,
+    DetallePacienteComponent,
     PacientesComponent,
     SeguimientoPacienteComponent,
     DirectorioComponent,
