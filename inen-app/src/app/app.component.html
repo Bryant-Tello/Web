@@ -15,8 +15,14 @@
               <li class="nav-item" role="presentation">
                 <a class="nav-link active js-scroll-trigger" routerLink="medicos" style="color: rgb(255,165,85);">Médicos</a>
               </li>
-              <li class="nav-item" role="presentation">
-                <a class="nav-link active js-scroll-trigger" routerLink="pacientes" style="color: rgb(255,165,85);">Pacientes</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: rgb(255,165,85);">
+                  PACIENTES
+                </a>          
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="nav-link active js-scroll-trigger" routerLink="nuevo-paciente" style="color: rgb(255,165,85);">Nuevo Paciente</a>
+                  <a class="nav-link active js-scroll-trigger" routerLink="lista-pacientes" style="color: rgb(255,165,85);">Lista Pacientes</a>
+                </div>     
               </li>
               <li class="nav-item" role="presentation">
                 <a class="nav-link active js-scroll-trigger" routerLink="seguimiento-paciente" style="color: rgb(255,165,85);">Seguimiento del Paciente</a>

@@ -19,6 +19,8 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { HistorialComponent } from './pages/historial/historial.component';
+import { ListaPacientesComponent } from './pages/pacientes/lista-pacientes/lista-pacientes.component';
+import { NuevoPacienteComponent } from './pages/pacientes/nuevo-paciente/nuevo-paciente.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { HistorialComponent } from './pages/historial/historial.component';
     DirectorioComponent,
     PerfilComponent,
     HomeComponent,
-    HistorialComponent
+    HistorialComponent,
+    ListaPacientesComponent,
+    NuevoPacienteComponent
   ],
   imports: [
     BrowserModule,
