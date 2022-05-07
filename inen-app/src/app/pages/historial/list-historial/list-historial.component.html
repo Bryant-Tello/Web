@@ -1,0 +1,46 @@
+<div class="container">
+
+
+    <mat-toolbar>
+       <span>Lista de Historial Medico</span>
+       <p></p>
+     </mat-toolbar>
+     
+   <div class="input-group rounded col-4 float-right" >
+       <input type="search" class="form-control rounded" placeholder="Buscar..." aria-label="Search" aria-describedby="search-addon" />
+       <span class="input-group-text border-0" id="search-addon">
+         <i class="fas fa-search"></i>
+       </span>
+       <br>
+     </div>
+   
+   <div class="table-responsive table-striped mr-3" style="border-radius: 10px;">
+       <br>
+       <table class="table" style="margin:0px;">
+           <thead style="background-color: rgba(14, 132, 251, 0.75);color: rgb(249, 247, 247);">
+               <tr>
+                   
+                   <th class="align-middle"><strong>Num Expediente</strong><br></th>
+                   <th class="align-middle"><strong>Paciente</strong><br></th>
+                   <th class="align-middle"><strong>Documento</strong><br></th>
+                   <th class="align-middle"><strong>Edad</strong><br></th>
+                   <th class="align-middle"><strong>Radiologo</strong><br></th>
+                   <th class="align-middle"><strong>Informe</strong><br></th>
+                   
+               </tr>
+           </thead>
+           <tbody>
+               <tr *ngFor="let p of historials">
+                   
+                   <td class="align-middle"> {{ p.numExpediente }}</td>
+                   <td class="align-middle">{{ p.paciente }}</td>
+                   <td class="align-middle">{{ p.numDocumento }}</td>
+                   <td class="align-middle">{{ p.edad }}</td>
+                   <td class="align-middle">{{  p.radiologo }}</td>
+                   <td class="align-middle">{{ p.informe }}</td>
+               </tr>
+              
+           </tbody>
+       </table>
+   </div>
+   </div>

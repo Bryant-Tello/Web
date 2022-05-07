@@ -2,26 +2,26 @@
     <span>Registrar Historial Médico</span>
     <p></p>
 </mat-toolbar>
-<form class="row">
+<form [formGroup]="historialForm" method="post" class="row">
     <div class="container">
         <div class="input-group mb-3">
             <div class="col-md-4">
                 <label for="numExpediente" class="form-label">Num. Expediente</label>
-                <input type="text" class="form-control" id="numExpediente" name="numExpediente">
+                <input type="text" formControlName="NumExpediente" class="form-control" id="numExpediente" name="numExpediente">
             </div>
             <div class="col-md-4">
                 <label for="paciente" class="form-label">Paciente</label>
-                <input type="text" class="form-control" id="paciente" name="paciente">
+                <input type="text" formControlName="Paciente" class="form-control" id="paciente" name="paciente">
             </div>
             <div class="col-md-4">
                 <label for="nacionalidad" class="form-label">Nacionalidad</label>
-                <input type="text" class="form-control" id="nacionalidad" name="nacionalidad">
+                <input type="text" formControlName="Nacionalidad" class="form-control" id="nacionalidad" name="nacionalidad">
             </div>
         </div>
         <div class="input-group mb-3">
             <div class="col-md-4">
                 <label for="" class="form-label">Tipo de Documento</label>
-                <select class="form-control" aria-label="Default select example">
+                <select class="form-control" formControlName="TipoDocumento" aria-label="Default select example">
                     <option selected>Selecione el tipo de documento</option>
                     <option value="1">DNI</option>
                     <option value="2">Carnet de Extranjeria</option>
@@ -29,21 +29,21 @@
             </div>
             <div class="col-md-4">
                 <label for="numDocumento" class="form-label">N° de Documento</label>
-                <input type="text" class="form-control" id="numDocumento" name="numDocumento">
+                <input type="text" formControlName="NumDocumento" class="form-control" id="numDocumento" name="numDocumento">
             </div>
             <div class="col-md-4">
                 <label for="edad" class="form-label">Edad</label>
-                <input type="number" class="form-control" id="edad" name="edad">
+                <input type="number" formControlName="Edad" class="form-control" id="edad" name="edad">
             </div>
         </div>
         <div class="input-group mb-3">
             <div class="col-md-4">
                 <label for="radiologo" class="form-label">Radiologo</label>
-                <input type="text" class="form-control" id="radiologo" name="radiologo">
+                <input type="text" formControlName="Radiologo" class="form-control" id="radiologo" name="radiologo">
             </div>
             <div class="col-md-4">
                 <label for="" class="form-label">Estado Civil</label>
-                <select class="form-control" aria-label="Default select example">
+                <select class="form-control" formControlName="EstadoCivil" aria-label="Default select example">
                     <option selected>Selecione estado civil</option>
                     <option value="1">Soltero</option>
                     <option value="2">Casado</option>
@@ -54,35 +54,35 @@
             </div>
             <div class="col-md-4">
                 <label for="telfijo" class="form-label">Teléfono Fijo</label>
-                <input type="tel" class="form-control" id="telfijo" name="telfijo">
+                <input type="tel" formControlName="Telefono" class="form-control" id="telfijo" name="telfijo">
             </div>
         </div>
         <div class="input-group mb-3">
             <div class="col-md-4">
                 <label for="telcel" class="form-label">Teléfono Celular</label>
-                <input type="tel" class="form-control" id="telcel" name="telcel">
+                <input type="tel" formControlName="Celular" class="form-control" id="telcel" name="telcel">
             </div>
             <div class="col-md-4">
                 <label for="correo" class="form-label">Correo electrónico</label>
-                <input type="email" class="form-control" id="correo" name="correo" placeholder="@">
+                <input type="email" formControlName="Correo" class="form-control" id="correo" name="correo" placeholder="@">
             </div>
             <div class="col-md-4">
                 <label for="fecNacimiento" class="form-label">Fecha Nacimiento</label>
-                <input type="date" class="form-control" id="fecNacimiento" name="fecNacimiento">
+                <input type="date" formControlName="FechaNacimiento" class="form-control" id="fecNacimiento" name="fecNacimiento">
             </div>
         </div>
         <div class="input-group mb-3">
             <div class="col-md-4">
                 <label for="ocupacion" class="form-label">Ocupación</label>
-                <input type="text" class="form-control" id="ocupacion" name="ocupacion">
+                <input type="text" formControlName="Ocupacion" class="form-control" id="ocupacion" name="ocupacion">
             </div>
             <div class="col-md-4">
                 <label for="direccion" class="form-label">Dirección</label>
-                <input type="text" class="form-control" id="direccion" name="direccion">
+                <input type="text" formControlName="Direccion" class="form-control" id="direccion" name="direccion">
             </div>
             <div class="col-md-4">
                 <label for="fecNacimiento" class="form-label">Distrito</label>
-                <select class="form-control" aria-label="Default select example">
+                <select class="form-control" formControlName="Distrito" aria-label="Default select example">
                     <option selected>Selecione distrto</option>
                     <option value="1">Cercado de Lima</option>
                     <option value="2">Breña</option>
@@ -95,11 +95,11 @@
         <div class="input-group mb-3">
             <div class="col-md-8">
                 <label for="informe" class="form-label">Informe</label>
-                <textarea name="informe" id="informe" class="form-control" cols="15" rows="3"></textarea>
+                <textarea name="informe" formControlName="Informe" id="informe" class="form-control" cols="15" rows="3"></textarea>
             </div>
             <div class="col-md-4">
                 <label for="formFile" class="form-label">Subir Resonancia</label>
-                <input class="form-control" type="file" id="formFile" name="formFile">
+                <input class="form-control" formControlName="Img" type="file" id="formFile" name="formFile">
             </div>
         </div>
         <div class="input-group mb-3">
@@ -110,7 +110,7 @@
 
             </div>
             <div class="col-md-2">
-                <button type="button" class="btn btn-success">Registrar</button>
+                <button (click)="__onSubmit()" type="submit" class="btn btn-success">Registrar</button>
             </div>
             <div class="col-md-2">
                 <button type="button" class="btn btn-danger">Cancelar</button>

@@ -23,6 +23,9 @@ import { HistorialComponent } from './pages/historial/historial.component';
 import { ListaPacientesComponent } from './pages/pacientes/lista-pacientes/lista-pacientes.component';
 import { NuevoPacienteComponent } from './pages/pacientes/nuevo-paciente/nuevo-paciente.component';
 import { EditarHistorialComponent } from './pages/historial/editar-historial/editar-historial.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { ListHistorialComponent } from './pages/historial/list-historial/list-historial.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +41,8 @@ import { EditarHistorialComponent } from './pages/historial/editar-historial/edi
     HistorialComponent,
     ListaPacientesComponent,
     NuevoPacienteComponent,
-    EditarHistorialComponent
+    EditarHistorialComponent,
+    ListHistorialComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +55,9 @@ import { EditarHistorialComponent } from './pages/historial/editar-historial/edi
     MatProgressBarModule,
     MatButtonModule,
     MatFormFieldModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

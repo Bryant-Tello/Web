@@ -12,6 +12,7 @@ import { SeguimientoPacienteComponent } from './pages/seguimiento-paciente/segui
 import { ListaPacientesComponent } from './pages/pacientes/lista-pacientes/lista-pacientes.component';
 import { NuevoPacienteComponent } from './pages/pacientes/nuevo-paciente/nuevo-paciente.component';
 import { EditarHistorialComponent } from './pages/historial/editar-historial/editar-historial.component';
+import { ListHistorialComponent } from './pages/historial/list-historial/list-historial.component';
 
 const routes: Routes = [
   {path: 'directorio', component: DirectorioComponent},
@@ -25,7 +26,8 @@ const routes: Routes = [
   {path: 'historialmedico', component: HistorialComponent},
   {path: 'editarhistorialmedico', component: EditarHistorialComponent},
   {path: 'lista-pacientes', component: ListaPacientesComponent},
-  {path: 'nuevo-paciente', component: NuevoPacienteComponent}
+  {path: 'nuevo-paciente', component: NuevoPacienteComponent},
+  {path: 'list-historial', component: ListHistorialComponent}
 ];
 
 @NgModule({
